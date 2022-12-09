@@ -1,0 +1,29 @@
+public class Personagem{
+
+    String name;
+    int life;
+
+    void PokC(){
+        System.out.println("Pokemon:" + this.name);
+        System.out.println("Life:" + this.life);
+
+        if(this.life == 0){
+            System.out.println(name + "VOCÊ MORREU!!");
+        }
+    }
+    
+    Personagem(String name, int life)
+{
+    this.name = name;
+    this.life = life;
+}
+Personagem(){
+
+}
+void damage(int qt_pontos){
+    
+    this.life = this.life - qt_pontos;
+
+    System.out.println(this.name + "perdeu" + qt_pontos );
+}
+}
